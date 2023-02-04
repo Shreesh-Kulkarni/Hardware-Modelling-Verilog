@@ -14,6 +14,6 @@ begin
     #20;
     A=0;
     #20;
-    $display("Test complete. its working nigga");
+    $display("Test complete. its working ");
 end
 endmodule
