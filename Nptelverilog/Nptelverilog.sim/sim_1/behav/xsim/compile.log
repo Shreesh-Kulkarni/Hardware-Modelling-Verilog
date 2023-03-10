@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Shreesh Kulkarni/OneDrive/Desktop/Shreesh/Nptelverilog/Nptelverilog.srcs/sim_1/imports/behavioural2structural/mux16btb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1
-INFO: [VRFC 10-311] analyzing module mux4to1
-INFO: [VRFC 10-311] analyzing module s16bitmux
-INFO: [VRFC 10-311] analyzing module mux16btb
