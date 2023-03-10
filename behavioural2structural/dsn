@@ -1,0 +1,54 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001b7cba05ab0 .scope module, "mux16btb" "mux16btb" 2 2;
+ .timescale 0 0;
+v000001b7cbb0bc40_0 .var "A", 15 0;
+v000001b7cbb0bce0_0 .var "B", 3 0;
+v000001b7cbb0bd80_0 .net "O", 0 0, L_000001b7cbb0be20;  1 drivers
+S_000001b7cba05c40 .scope module, "M" "s16bitmux" 2 6, 3 1 0, S_000001b7cba05ab0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "in";
+    .port_info 1 /INPUT 4 "sel";
+    .port_info 2 /OUTPUT 1 "out";
+v000001b7cba05dd0_0 .net "in", 15 0, v000001b7cbb0bc40_0;  1 drivers
+v000001b7cbb06a20_0 .net "out", 0 0, L_000001b7cbb0be20;  alias, 1 drivers
+v000001b7cba05e70_0 .net "sel", 3 0, v000001b7cbb0bce0_0;  1 drivers
+L_000001b7cbb0be20 .part/v v000001b7cbb0bc40_0, v000001b7cbb0bce0_0, 1;
+    .scope S_000001b7cba05ab0;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "mux16btb.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001b7cba05ab0 {0 0 0};
+    %delay 5, 0;
+    %pushi/vec4 49664, 0, 16;
+    %store/vec4 v000001b7cbb0bc40_0, 0, 16;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v000001b7cbb0bce0_0, 0, 4;
+    %delay 5, 0;
+    %pushi/vec4 9, 0, 4;
+    %store/vec4 v000001b7cbb0bce0_0, 0, 4;
+    %delay 5, 0;
+    %pushi/vec4 14, 0, 4;
+    %store/vec4 v000001b7cbb0bce0_0, 0, 4;
+    %delay 5, 0;
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v000001b7cbb0bce0_0, 0, 4;
+    %delay 5, 0;
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v000001b7cbb0bce0_0, 0, 4;
+    %delay 5, 0;
+    %vpi_call 2 17 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "mux16btb.v";
+    "./mux16b.v";

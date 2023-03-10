@@ -1,0 +1,52 @@
+$date
+	Fri Mar 10 10:59:58 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux16btb $end
+$var wire 1 ! O $end
+$var reg 16 " A [15:0] $end
+$var reg 4 # B [3:0] $end
+$scope module M $end
+$var wire 16 $ in [15:0] $end
+$var wire 4 % sel [3:0] $end
+$var wire 1 ! out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx %
+bx $
+bx #
+bx "
+x!
+$end
+#5
+0!
+b0 #
+b0 %
+b1100001000000000 "
+b1100001000000000 $
+#10
+1!
+b1001 #
+b1001 %
+#15
+b1110 #
+b1110 %
+#20
+b1111 #
+b1111 %
+#25
+0!
+b1010 #
+b1010 %
+#30
