@@ -1,0 +1,109 @@
+$date
+	Sat Feb 11 16:27:17 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module RSA_decrypt_tb $end
+$var wire 11 ! M [10:0] $end
+$var reg 11 " c [10:0] $end
+$var reg 1 # clk $end
+$var reg 1 $ reset $end
+$scope module DUT $end
+$var wire 11 % c [10:0] $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var wire 11 & M [10:0] $end
+$var parameter 32 ' e $end
+$var parameter 32 ( n $end
+$var parameter 32 ) phi $end
+$var integer 32 * Mreg [31:0] $end
+$var integer 32 + d [31:0] $end
+$var integer 32 , f [31:0] $end
+$var integer 32 - i [31:0] $end
+$var integer 32 . x [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1111000 )
+b10001111 (
+b1011 '
+$end
+#0
+$dumpvars
+bx .
+b0 -
+bx ,
+b0 +
+bx *
+bx &
+bx %
+1$
+0#
+bx "
+bx !
+$end
+#5
+b1 .
+b1 -
+1#
+0$
+#10
+b1 !
+b1 &
+b1 *
+0#
+b1011000 "
+b1011000 %
+#15
+b1111001 .
+b10 -
+1#
+#20
+0#
+b1011011 "
+b1011011 %
+#25
+b11110001 .
+b11 -
+b1011 ,
+1#
+#30
+0#
+b1000010 "
+b1000010 %
+#35
+b101101001 .
+b100 -
+1#
+#40
+0#
+b1001111 "
+b1001111 %
+#45
+b111100001 .
+b101 -
+1#
+#50
+0#
+b1001110 "
+b1001110 %
+#55
+b1001011001 .
+b110 -
+1#
+#60
+0#
+b1011001 "
+b1011001 %
+#65
+b1011010001 .
+b111 -
+1#
+#70
+0#
