@@ -8,4 +8,3 @@ assign P=~^sum;
 assign Zero=~|sum;
 assign O=((X[15]&Y[15]&~sum[15])|(~X[15]&~Y[15]&sum[15]));
 endmodule
-
