@@ -3,3 +3,5 @@ All basic to advanced hardware models which are used in VLSI Frontend Design usi
 
 *All the files are to be executed using IcarusVerilog and GtkWave.*
 
+Vivado Executable files are included in the nptelverilog file.
+
