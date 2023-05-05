@@ -1,0 +1,91 @@
+$date
+	Fri May 05 15:07:44 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module adderalu16btb $end
+$var wire 1 ! Sign $end
+$var wire 1 " zero $end
+$var wire 1 # sign $end
+$var wire 1 $ par $end
+$var wire 1 % overflow $end
+$var wire 1 & carry $end
+$var wire 16 ' Z [15:0] $end
+$var reg 16 ( X [15:0] $end
+$var reg 16 ) Y [15:0] $end
+$scope module DUT $end
+$var wire 1 % O $end
+$var wire 16 * X [15:0] $end
+$var wire 16 + Y [15:0] $end
+$var wire 16 , sum [15:0] $end
+$var wire 1 " Zero $end
+$var wire 1 # S $end
+$var wire 1 $ P $end
+$var wire 1 & C $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+x&
+x%
+x$
+x#
+x"
+z!
+$end
+#5
+0%
+0#
+1$
+1"
+b0 '
+b0 ,
+0&
+b0 )
+b0 +
+b0 (
+b0 *
+#10
+1%
+1&
+0"
+b111111111111 '
+b111111111111 ,
+b1000000000000000 )
+b1000000000000000 +
+b1000111111111111 (
+b1000111111111111 *
+#15
+0%
+1"
+b0 '
+b0 ,
+b10 )
+b10 +
+b1111111111111110 (
+b1111111111111110 *
+#20
+1#
+0"
+b1111111111111111 '
+b1111111111111111 ,
+0&
+b101010101010101 )
+b101010101010101 +
+b1010101010101010 (
+b1010101010101010 *
+#25
