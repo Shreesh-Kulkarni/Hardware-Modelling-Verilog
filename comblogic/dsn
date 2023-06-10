@@ -7,49 +7,66 @@
 :vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
-S_000001e87e2abc40 .scope module, "hadftb" "hadftb" 2 3;
+S_0000022391b5d090 .scope module, "fagltb" "fagltb" 2 3;
  .timescale -12 -12;
-v000001e87e2ab6c0_0 .var "a", 0 0;
-v000001e87e2ab760_0 .var "b", 0 0;
-v000001e87e2a6630_0 .net "c", 0 0, L_000001e87e2a8d60;  1 drivers
-v000001e87e2a66d0_0 .net "s", 0 0, L_000001e87e2f5da0;  1 drivers
-S_000001e87e2abdd0 .scope module, "DUT" "hadf" 2 6, 3 1 0, S_000001e87e2abc40;
+v0000022391bec840_0 .var "a", 0 0;
+v0000022391bec8e0_0 .var "b", 0 0;
+v0000022391bec980_0 .var "c", 0 0;
+v0000022391beca20_0 .net "cout", 0 0, L_0000022391ba43c0;  1 drivers
+v0000022391bed010_0 .net "s", 0 0, L_0000022391b570b0;  1 drivers
+S_0000022391b5d220 .scope module, "DUT" "fagl" 2 6, 3 1 0, S_0000022391b5d090;
  .timescale 0 0;
     .port_info 0 /INPUT 1 "a";
     .port_info 1 /INPUT 1 "b";
-    .port_info 2 /OUTPUT 1 "s";
-    .port_info 3 /OUTPUT 1 "c";
-L_000001e87e2f5da0 .functor XOR 1, v000001e87e2ab6c0_0, v000001e87e2ab760_0, C4<0>, C4<0>;
-L_000001e87e2a8d60 .functor AND 1, v000001e87e2ab6c0_0, v000001e87e2ab760_0, C4<1>, C4<1>;
-v000001e87e2a8cc0_0 .net "a", 0 0, v000001e87e2ab6c0_0;  1 drivers
-v000001e87e2ab4e0_0 .net "b", 0 0, v000001e87e2ab760_0;  1 drivers
-v000001e87e2ab580_0 .net "c", 0 0, L_000001e87e2a8d60;  alias, 1 drivers
-v000001e87e2ab620_0 .net "s", 0 0, L_000001e87e2f5da0;  alias, 1 drivers
-    .scope S_000001e87e2abc40;
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 1 "sum";
+    .port_info 4 /OUTPUT 1 "cout";
+L_0000022391b56f50 .functor XOR 1, v0000022391bec840_0, v0000022391bec8e0_0, C4<0>, C4<0>;
+L_0000022391b570b0 .functor XOR 1, L_0000022391b56f50, v0000022391bec980_0, C4<0>, C4<0>;
+L_0000022391ba42e0 .functor AND 1, L_0000022391b56f50, v0000022391bec980_0, C4<1>, C4<1>;
+L_0000022391ba4350 .functor AND 1, v0000022391bec840_0, v0000022391bec8e0_0, C4<1>, C4<1>;
+L_0000022391ba43c0 .functor OR 1, L_0000022391ba42e0, L_0000022391ba4350, C4<0>, C4<0>;
+v0000022391b5b5f0_0 .net "a", 0 0, v0000022391bec840_0;  1 drivers
+v0000022391b56a30_0 .net "b", 0 0, v0000022391bec8e0_0;  1 drivers
+v0000022391b5b690_0 .net "cin", 0 0, v0000022391bec980_0;  1 drivers
+v0000022391b5b730_0 .net "cout", 0 0, L_0000022391ba43c0;  alias, 1 drivers
+v0000022391b5b7d0_0 .net "sum", 0 0, L_0000022391b570b0;  alias, 1 drivers
+v0000022391b5b870_0 .net "t1", 0 0, L_0000022391b56f50;  1 drivers
+v0000022391b5b910_0 .net "t2", 0 0, L_0000022391ba42e0;  1 drivers
+v0000022391b5b9b0_0 .net "t3", 0 0, L_0000022391ba4350;  1 drivers
+    .scope S_0000022391b5d090;
 T_0 ;
-    %vpi_call 2 9 "$dumpfile", "hadftb.vcd" {0 0 0};
-    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001e87e2abc40 {0 0 0};
-    %vpi_call 2 11 "$monitor", $time, "  A=%b,B=%b,Sum = %b,Carry=%b", v000001e87e2ab6c0_0, v000001e87e2ab760_0, v000001e87e2a66d0_0, v000001e87e2a6630_0 {0 0 0};
+    %vpi_call 2 9 "$dumpfile", "fagltb.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000022391b5d090 {0 0 0};
+    %vpi_call 2 11 "$monitor", $time, " A=%b,B=%b,Cin=%b,Sum=%b,Carryout=%b", v0000022391bec840_0, v0000022391bec8e0_0, v0000022391bec980_0, v0000022391bed010_0, v0000022391beca20_0 {0 0 0};
     %delay 5, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001e87e2ab6c0_0, 0, 1;
+    %store/vec4 v0000022391bec840_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001e87e2ab760_0, 0, 1;
+    %store/vec4 v0000022391bec8e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022391bec980_0, 0, 1;
     %delay 5, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001e87e2ab6c0_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001e87e2ab760_0, 0, 1;
-    %delay 5, 0;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001e87e2ab6c0_0, 0, 1;
+    %store/vec4 v0000022391bec840_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001e87e2ab760_0, 0, 1;
+    %store/vec4 v0000022391bec8e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000022391bec980_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022391bec840_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000022391bec8e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022391bec980_0, 0, 1;
     %delay 5, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001e87e2ab6c0_0, 0, 1;
+    %store/vec4 v0000022391bec840_0, 0, 1;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001e87e2ab760_0, 0, 1;
+    %store/vec4 v0000022391bec8e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000022391bec980_0, 0, 1;
     %delay 5, 0;
     %vpi_call 2 16 "$finish" {0 0 0};
     %end;
@@ -58,5 +75,5 @@ T_0 ;
 :file_names 4;
     "N/A";
     "<interactive>";
-    "hadftb.v";
-    "./hadf.v";
+    "fagltb.v";
+    "./fagl.v";
