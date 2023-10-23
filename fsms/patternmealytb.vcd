@@ -1,0 +1,76 @@
+$date
+	Wed Oct 18 16:10:14 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module patternmealytb $end
+$var wire 1 ! out $end
+$var reg 1 " clk $end
+$var reg 1 # in $end
+$var reg 1 $ reset $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 1 # in $end
+$var wire 1 $ reset $end
+$var parameter 2 % A $end
+$var parameter 2 & B $end
+$var parameter 2 ' C $end
+$var parameter 2 ( D $end
+$var reg 2 ) current [1:0] $end
+$var reg 2 * next [1:0] $end
+$var reg 1 ! out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 (
+b10 '
+b1 &
+b0 %
+$end
+#0
+$dumpvars
+bx *
+bx )
+1$
+x#
+0"
+0!
+$end
+#60
+0$
+#80
+1#
+#115
+1"
+#170
+0"
+#180
+0#
+#225
+1"
+#280
+0"
+#300
+1#
+#335
+1"
+#390
+0"
+#400
+0#
+1!
+#445
+1"
+#475
+1#
+#500
+0"
+#510
+0!
+#550
