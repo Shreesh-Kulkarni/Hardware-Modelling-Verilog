@@ -1,0 +1,73 @@
+$date
+	Mon Sep 18 18:38:36 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb $end
+$var wire 2 ! out [1:0] $end
+$var reg 4 " inputs [3:0] $end
+$scope module uut $end
+$var wire 4 # inputs [3:0] $end
+$var wire 2 $ out [1:0] $end
+$var reg 2 % encoded_output [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx %
+bx $
+b0 #
+b0 "
+bx !
+$end
+#10
+b11 !
+b11 $
+b11 %
+b1000 "
+b1000 #
+#20
+b10 !
+b10 $
+b10 %
+b100 "
+b100 #
+#30
+b1 !
+b1 $
+b1 %
+b10 "
+b10 #
+#40
+b0 !
+b0 $
+b0 %
+b1 "
+b1 #
+#50
+b11 !
+b11 $
+b11 %
+b1100 "
+b1100 #
+#60
+b10 !
+b10 $
+b10 %
+b110 "
+b110 #
+#70
+b11 !
+b11 $
+b11 %
+b1111 "
+b1111 #
+#80
