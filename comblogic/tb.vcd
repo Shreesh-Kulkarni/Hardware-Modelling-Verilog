@@ -1,0 +1,202 @@
+$date
+	Mon Sep 18 16:06:27 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb $end
+$var wire 1 ! out2 $end
+$var wire 1 " out1 $end
+$var reg 1 # in1 $end
+$var reg 1 $ in2 $end
+$var reg 1 % in3 $end
+$var reg 1 & in4 $end
+$var reg 1 ' sel0 $end
+$var reg 1 ( sel1 $end
+$scope module dut $end
+$var wire 1 # in1 $end
+$var wire 1 $ in2 $end
+$var wire 1 ' sel $end
+$var reg 1 " out $end
+$upscope $end
+$scope module dut1 $end
+$var wire 1 % in1 $end
+$var wire 1 & in2 $end
+$var wire 1 ( sel $end
+$var reg 1 ! out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#5
+1"
+1#
+#10
+1$
+#15
+1%
+#20
+1!
+1&
+#25
+0(
+1'
+#30
+0#
+#35
+0"
+0$
+#40
+0!
+0%
+#45
+0&
+#50
+1(
+0'
+#55
+1"
+1#
+#60
+1$
+#65
+1%
+#70
+1!
+1&
+#75
+0(
+1'
+#80
+0#
+#85
+0"
+0$
+#90
+0!
+0%
+#95
+0&
+#100
+1(
+0'
+#105
+1"
+1#
+#110
+1$
+#115
+1%
+#120
+1!
+1&
+#125
+0(
+1'
+#130
+0#
+#135
+0"
+0$
+#140
+0!
+0%
+#145
+0&
+#150
+1(
+0'
+#155
+1"
+1#
+#160
+1$
+#165
+1%
+#170
+1!
+1&
+#175
+0(
+1'
+#180
+0#
+#185
+0"
+0$
+#190
+0!
+0%
+#195
+0&
+#200
+1(
+0'
+#205
+1"
+1#
+#210
+1$
+#215
+1%
+#220
+1!
+1&
+#225
+0(
+1'
+#230
+0#
+#235
+0"
+0$
+#240
+0!
+0%
+#245
+0&
+#250
+1(
+0'
+#255
+1"
+1#
+#260
+1$
+#265
+1%
+#270
+1!
+1&
+#275
+0(
+1'
+#280
+0#
+#285
+0"
+0$
+#290
+0!
+0%
+#295
+0&
+#300
+1(
+0'
