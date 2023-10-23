@@ -1,0 +1,127 @@
+$date
+	Mon Sep 11 14:31:08 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module mbgatestb $end
+$var wire 3 ! oxor [2:0] $end
+$var wire 3 " oxnor [2:0] $end
+$var wire 3 # oor [2:0] $end
+$var wire 3 $ onot [2:0] $end
+$var wire 3 % onor [2:0] $end
+$var wire 3 & onand [2:0] $end
+$var wire 3 ' oand [2:0] $end
+$var reg 3 ( a [2:0] $end
+$var reg 3 ) b [2:0] $end
+$scope module dut $end
+$var wire 3 * in1 [2:0] $end
+$var wire 3 + in2 [2:0] $end
+$var wire 3 , outand [2:0] $end
+$var wire 3 - outnand [2:0] $end
+$var wire 3 . outnor [2:0] $end
+$var wire 3 / outnot [2:0] $end
+$var wire 3 0 outor [2:0] $end
+$var wire 3 1 outxnor [2:0] $end
+$var wire 3 2 outxor [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 2
+b111 1
+b0 0
+b111 /
+b111 .
+b111 -
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+b111 &
+b111 %
+b111 $
+b0 #
+b111 "
+b0 !
+$end
+#155
+b110 %
+b110 .
+b110 "
+b110 1
+b1 #
+b1 0
+b1 !
+b1 2
+b1 )
+b1 +
+#310
+b101 &
+b101 -
+b100 %
+b100 .
+b10 '
+b10 ,
+b11 #
+b11 0
+b101 $
+b101 /
+b11 )
+b11 +
+b10 (
+b10 *
+#465
+b11 &
+b11 -
+b10 %
+b10 .
+b100 '
+b100 ,
+b101 #
+b101 0
+b11 $
+b11 /
+b101 )
+b101 +
+b100 (
+b100 *
+#620
+b1 &
+b1 -
+b0 %
+b0 .
+b110 '
+b110 ,
+b111 #
+b111 0
+b1 $
+b1 /
+b111 )
+b111 +
+b110 (
+b110 *
+#775
+b110 &
+b110 -
+b1 "
+b1 1
+b1 '
+b1 ,
+b110 !
+b110 2
+b0 $
+b0 /
+b1 )
+b1 +
+b111 (
+b111 *
