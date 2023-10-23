@@ -1,0 +1,63 @@
+$date
+	Mon Sep 04 16:25:08 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module gatestb $end
+$var wire 1 ! oxor $end
+$var wire 1 " oxnor $end
+$var wire 1 # oor $end
+$var wire 1 $ onot $end
+$var wire 1 % onor $end
+$var wire 1 & onand $end
+$var wire 1 ' oand $end
+$var reg 1 ( a $end
+$var reg 1 ) b $end
+$scope module dut $end
+$var wire 1 ( in1 $end
+$var wire 1 ) in2 $end
+$var wire 1 ' outand $end
+$var wire 1 & outnand $end
+$var wire 1 % outnor $end
+$var wire 1 $ outnot $end
+$var wire 1 # outor $end
+$var wire 1 " outxnor $end
+$var wire 1 ! outxor $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0)
+0(
+0'
+1&
+1%
+1$
+0#
+1"
+0!
+$end
+#155
+0%
+0"
+1#
+1!
+1)
+#310
+0$
+0)
+1(
+#465
+0&
+1"
+1'
+0!
+1)
