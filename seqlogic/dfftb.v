@@ -11,7 +11,8 @@ initial begin
 end
 initial begin
     rst=1'b1;
-    #5 rst=1'b0;
+    forever
+    #4 rst=~rst;
 end
 initial begin
     $dumpfile("dfftb.vcd");
@@ -19,8 +20,8 @@ initial begin
     $monitor($time," D=%b, Reset=%b ,Q=%b , Qbar=%b",d,rst,q,qbar);
     #5  d=1'b0;
     #10 d=1'b1;
-    #15 d=1'b0;
-    #20 d=1'b0;
+    #15 d=1'b1;
+    #20 d=1'b1;
     #25 d=1'b0;
     #30 d=1'b1;
     #35 d=1'b0;

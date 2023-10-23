@@ -3,7 +3,7 @@ input d,clk,rst;
 output q,qbar;
 reg q;
 assign qbar=~q;
-always @(posedge clk or negedge rst) begin
+always @(posedge clk) begin
     if(rst)
     q<=1'b0;
     else
